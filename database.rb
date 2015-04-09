@@ -13,3 +13,13 @@ get '/' do
   @@mysqlclient.query("INSERT INTO Detail(Name) VALUES('Aavar Bajimaya')")
   @@mysqlclient.query("INSERT INTO Detail(Name) VALUES('Lokesh Neupane')")   
 end
+
+# get '/' do
+# res = Array.new
+# result = @@mysqlclient.query("SELECT * FROM Detail",:as => :array)
+# result.each do | row | 
+# res.push(row)
+# end
+# return res
+# .to_s
+# end
